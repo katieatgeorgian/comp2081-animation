@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+h1,
+h2 {
+  animation-name: changeColour;
+  animation-duration: 30s;
+}
+
+p {
+  color: darkslategrey;
+}
+
+@keyframes changeColour {
+  0% {
+    color: purple;
+  }
+  50% {
+    color: darkblue;
+  }
+  100% {
+    color: darkslategrey;
+  }
+}
+
+img {
+  animation-name: colourIn;
+  animation-duration: 10s;
+}
+
+@keyframes colourIn {
+  0% {
+    filter: grayscale(100%);
+  }
+  50% {
+    filter: grayscale(0%);
+  }
+  100% {
+    filter: brightness(120%);
+  }
+}
+
+li:nth-of-type(1) {
+  animation-name: easeIn1;
+  animation-duration: 10s;
+}
+
+li:nth-of-type(2) {
+  animation-name: easeIn2;
+  animation-duration: 10s;
+}
+li:nth-of-type(3) {
+  animation-name: easeIn3;
+  animation-duration: 10s;
+}
+li:nth-of-type(4) {
+  animation-name: easeIn4;
+  animation-duration: 10s;
+}
+
+@keyframes easeIn1 {
+  0% {
+    color: white;
+  }
+  100% {
+    color: gray;
+  }
+}
+
+@keyframes easeIn2 {
+  20% {
+    color: white;
+  }
+  100% {
+    color: gray;
+  }
+}
+
+@keyframes easeIn3 {
+  40% {
+    color: white;
+  }
+  100% {
+    color: gray;
+  }
+}
+
+@keyframes easeIn4 {
+  60% {
+    color: white;
+  }
+  100% {
+    color: gray;
+  }
+}
