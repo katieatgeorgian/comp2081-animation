@@ -15,10 +15,10 @@ p {
     color: purple;
   }
   50% {
-    color: darkblue;
+    color: teal;
   }
-  100% {
-    color: darkslategrey;
+  90% {
+    color: blue;
   }
 }
 
